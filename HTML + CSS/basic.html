@@ -1,4 +1,3 @@
-<!-- Very basic (just learn what needed) -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,6 +54,69 @@
     <p id="a">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
     <p class="b">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
     <p id="a">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <!-- Form & Inputs -->
+    <form action="/register" method="POST">
+
+        <!-- Text input -->
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <!-- Email input -->
+        <label>Email:</label>
+        <input type="email" placeholder="your@example.com">
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password" required> <!-- using required -->
+
+        <!-- Number -->
+        <label>Age:</label>
+        <input type="number" min="18" max="99">
+
+        <!-- Date -->
+        <label>Birthday:</label>
+        <input type="date">
+
+        <!-- Checkbox -->
+        <input type="checkbox"> I agree to terms
+
+        <!-- Radio (same name = only one select) -->
+        <p>Gender:</p>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+
+        <!-- Select Dropdown -->
+        <label>Country:</label>
+        <select>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Bangladesh</option>
+        </select>
+
+        <!-- With multiple selection -->
+        <select multiple>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+        </select>
+
+        <!-- File upload -->
+        <label>Profile Picture:</label>
+        <input type="file">
+
+        <!-- Textarea (multi-line) -->
+        <label>Bio:</label>
+        <textarea rows="4" cols="50" placeholder="Tell about yourself"></textarea>
+
+        <!-- Reset button-->
+        <button type="reset">Reset</button>
+
+        <!-- Submit button -->
+        <button type="submit">Sign Up</button>
+    </form>
 </body>
 
 </html>
